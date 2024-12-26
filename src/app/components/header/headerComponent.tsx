@@ -8,8 +8,8 @@ import clsx from "clsx";
 import styles from "./header.module.css";
 
 const navLinks = [
-  { href: "/", label: "خانه", class: styles.active },
-  { href: "/search", label: "جستجو", class: styles.search },
+  { href: "/", label: "خانه", className: styles.active },
+  { href: "/search", label: "جستجو", className: styles.search },
 ];
 export default function HeaderComponent() {
   const pathname = usePathname();
@@ -21,7 +21,7 @@ export default function HeaderComponent() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={clsx(pathname === link.href && link.class)}
+                className={clsx(pathname === link.href && link.className)}
               >
                 {link.label}
               </Link>

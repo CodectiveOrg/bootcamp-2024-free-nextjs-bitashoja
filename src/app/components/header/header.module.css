@@ -3,17 +3,14 @@
   align-items: center;
   gap: 2rem;
   padding-block: 1rem;
+  nav > ul {
+    display: flex;
+    gap: 2rem;
+    > li > a.active {
+      color: var(--color-primary);
+    }
+  }
 }
-
-.header nav > ul {
-  display: flex;
-  gap: 2rem;
-}
-
-.header nav > ul > li > a.active {
-  color: var(--color-primary);
-}
-
 .cta {
   background-color: transparent;
   color: var(--color-primary);
@@ -23,9 +20,8 @@
   border-radius: var(--border-radius);
   font-weight: 700;
   cursor: pointer;
-}
-
-.cta:hover {
-  background-color: var(--color-primary);
-  color: var(--color-primary-opposite);
+  :hover {
+    background-color: var(--color-primary);
+    color: var(--color-primary-opposite);
+  }
 }
