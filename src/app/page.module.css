@@ -8,10 +8,10 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    font-size: 2.5rem;
+    font-size: var(--fz-700);
   }
   svg {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   .history {
     display: flex;
