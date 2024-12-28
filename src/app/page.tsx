@@ -1,24 +1,17 @@
-type Post = {
-  id: number;
-  title: string;
-};
-
-export default async function Home() {
-  const res = await fetch("https://jsonplaceholder.org/posts", {
-    cache: "no-cache",
-  });
-
-  const posts: Post[] = await res.json();
-
+import GlobalSearchBox from "./components/header/global-search-box/globalSearchBox";
+import styles from "./page.module.css";
+export default function Home() {
   return (
-    <main>
-      <h1>سلام دکترموون</h1>
-      <p>این یک پلتفرم جامع پزشکی و رزرو نوبت است</p>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul>
-    </main>
+    <div className={styles.home}>
+      <h1>دکتر موون</h1>
+      <GlobalSearchBox />
+      <div className={styles.history}>
+        <div className={styles.title}>آخرین جستجوهای شما</div>
+        <ul>
+          <li>ارتوپد</li>
+          <li>قلب و عروق</li>
+        </ul>
+      </div>
+    </div>
   );
 }
