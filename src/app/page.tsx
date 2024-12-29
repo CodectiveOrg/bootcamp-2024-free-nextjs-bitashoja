@@ -1,4 +1,4 @@
-import GlobalSearchBox from "./components/header/global-search-box/globalSearchBox";
+import GlobalSearchBox from "./components/global-search-box/globalSearchBox";
 import styles from "./page.module.css";
 export default function Home() {
   return (

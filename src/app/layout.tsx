@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 
 import HeaderComponent from "./components/header/headerComponent";
-import FooterComponent from "./components/header/footer/footerComponent";
+import FooterComponent from "./components/footer/footerComponent";
 
 import "@/styles/typography.css";
 import "./globals.css";
