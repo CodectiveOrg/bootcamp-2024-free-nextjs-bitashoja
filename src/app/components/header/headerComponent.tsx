@@ -11,8 +11,10 @@ const navLinks = [
   { href: "/", label: "خانه", className: styles.active },
   { href: "/search", label: "جستجو", className: styles.search },
 ];
+
 export default function HeaderComponent() {
   const pathname = usePathname();
+
   return (
     <header className={styles.header}>
       <nav>
