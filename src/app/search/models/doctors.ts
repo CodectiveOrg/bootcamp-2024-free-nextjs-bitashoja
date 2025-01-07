@@ -44,7 +44,7 @@ export const doctors: DoctorModel[] = [
     address: "جهرم,خیابان ۲۲ بهمن ،جنب بانک مسکن ،ساختمان حکیم ،طبقه سوم",
     firstAvailableAppointment: "15 دی 4 عصر",
     brief: "جراحی عمومی،جراحی پلاستیک و زیبایی،درمان هموروئید و فیشر و...",
-    specialty: "جراحی پلاستیک",
+    specialty: "جراحی عمومی",
     badges: ["خوش برخورد", "کمترین معطلی"],
     gender: "آقا",
   },
