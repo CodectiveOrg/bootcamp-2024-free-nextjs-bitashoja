@@ -4,6 +4,9 @@
   justify-content: space-between;
   background-color: var(--color-gray-16);
   .doctorbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #1e1e1e;
     color: #fff;
     border-radius: 10px;
@@ -35,6 +38,7 @@
       margin: 10px 0 5px 0;
     }
     p {
+      text-align: center;
       font-size: 12px;
       margin: 5px 0;
     }

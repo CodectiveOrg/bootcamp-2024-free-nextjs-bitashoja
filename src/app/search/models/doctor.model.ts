@@ -1,4 +1,5 @@
 export interface DoctorModel {
+  gender: string;
   id: string;
   name: string;
   image: string;
@@ -8,5 +9,6 @@ export interface DoctorModel {
   address: string;
   firstAvailableAppointment: string;
   brief: string;
+  specialty: string;
   badges: string[];
 }

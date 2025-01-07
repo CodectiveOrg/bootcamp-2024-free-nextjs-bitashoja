@@ -1,12 +1,22 @@
 // components/DoctorList.tsx
 import { doctors } from "@/app/search/models/doctors";
 import Image from "next/image";
-import styles from "./doctersList.module.css"; // وارد کردن استایل‌ها
+import styles from "./doctersList.module.css";
+import { useFilter } from "@/app/components/filter/FilterContext";
 
 const DoctorList = () => {
+  const { selectedGender, selectedSpecialty } = useFilter();
+
+  const filteredDoctors = doctors.filter((doctor) => {
+    const genderMatch = !selectedGender || doctor.gender === selectedGender;
+    const specialtyMatch =
+      !selectedSpecialty || doctor.specialty.includes(selectedSpecialty);
+    return genderMatch && specialtyMatch;
+  });
+
   return (
     <div className={styles.container}>
-      {doctors.map((doctor) => (
+      {filteredDoctors.map((doctor) => (
         <div className={styles.doctorbox} key={doctor.id}>
           <div className={styles.doctorimage}>
             <Image
