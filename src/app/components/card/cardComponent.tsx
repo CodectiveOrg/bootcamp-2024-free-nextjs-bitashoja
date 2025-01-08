@@ -73,7 +73,6 @@ export default function CardComponent({
           <li>
             <a onClick={() => handleSpecialtyChange("طب نوزادی")}>طب نوزادی</a>
           </li>
-          {/* سایر تخصص‌ها */}
         </ul>
       </div>
     </div>

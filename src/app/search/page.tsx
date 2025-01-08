@@ -34,28 +34,3 @@ export default function SearchPage() {
     </div>
   );
 }
-
-/*import React from "react";
-import styles from "./page.module.css";
-import { FilterProvider } from "@/app/components/filter/FilterContext";
-import CardComponent from "@/app/components/card/cardComponent";
-import DoctorList from "../components/docters-list/doctersList";
-
-export default function SearchPage() {
-  return (
-    <div className={styles.page}>
-      <FilterProvider>
-        <div className={styles.filters}>
-          <CardComponent
-            onGenderSelect={(gender) => console.log(gender)}
-            onSpecialtySelect={(specialty) => console.log(specialty)}
-          />
-        </div>
-        <div className={styles.box}>
-          <DoctorList />
-        </div>
-      </FilterProvider>
-    </div>
-  );
-}
-*/

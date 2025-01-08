@@ -10,19 +10,19 @@
   ul {
     list-style: none;
     padding: 0;
-  }
 
-  li {
-    margin: 5px 0;
-  }
+    li {
+      margin: 5px 0;
+    }
 
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    cursor: pointer;
-  }
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-  a:hover {
-    text-decoration: underline;
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
