@@ -7,10 +7,10 @@
   --color-default-background: var(--color-gray-10);
   --color-default-foreground: var(--color-gray-98);
 
-  --color-primary: hsl(55deg, 99%, 48%);
+  --color-primary: hsl(55, 95%, 42%);
   --color-primary-fade: hsl(120deg 50% 96%);
   --color-primary-lighter: hsl(55deg, 99%, 52%);
-  --color-primary-darker: hsl(55deg, 99%, 44%);
+  --color-primary-darker: hsl(55, 98%, 31%);
   --color-primary-opposite: var(--color-gray-10);
 
   --border-radius: 0.875rem;
