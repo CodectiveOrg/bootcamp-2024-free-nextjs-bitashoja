@@ -3,6 +3,7 @@ import { doctors } from "@/app/search/models/doctors";
 import Image from "next/image";
 import styles from "./doctersList.module.css";
 import { useFilter } from "@/app/components/filter/FilterContext";
+import Link from "next/link";
 
 const DoctorList = () => {
   const { selectedGender, selectedSpecialty } = useFilter();
@@ -36,7 +37,7 @@ const DoctorList = () => {
           <div className={styles.doctorinfo}>
             <p>{doctor.address}</p>
             <div className={styles.doctorbuttons}>
-              <button>نوبت آنلاین</button>
+              <Link href={`/doctor/${doctor.id}`}>نوبت آنلاین</Link>
               <button>نوبت‌دهی اینترنتی</button>
             </div>
           </div>
