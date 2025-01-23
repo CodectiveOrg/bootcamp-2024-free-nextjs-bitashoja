@@ -2,68 +2,68 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-}
 
-.left {
-  flex: 1;
-  margin-right: 20px;
-}
+  .left {
+    flex: 1;
+    margin-right: 20px;
 
-.right {
-  flex: 1;
-  margin-left: 20px;
-}
+    .image {
+      border-radius: 50%;
+    }
 
-.image {
-  border-radius: 50%;
-}
+    .details {
+      margin-top: 20px;
 
-.details {
-  margin-top: 20px;
-}
+      .rating span {
+        margin-left: 5px;
+      }
+    }
+  }
 
-.rating {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
+  .right {
+    flex: 1;
+    margin-left: 20px;
+  }
 
-.rating span {
-  margin-left: 5px;
-}
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 
-.contact {
-  margin-top: 20px;
-}
+    .contact {
+      margin-top: 20px;
 
-.contact button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+      .contact button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
 
-.contact button:hover {
-  background-color: var(--color-primary-dark);
-}
+        .contact button:hover {
+          background-color: var(--color-primary-dark);
+        }
+      }
+    }
 
-.address {
-  margin-top: 20px;
-}
+    .address {
+      margin-top: 20px;
 
-.address button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: var(--color-secondary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+      .address button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: var(--color-secondary);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
 
-.address button:hover {
-  background-color: var(--color-secondary-dark);
+        .address button:hover {
+          background-color: var(--color-secondary-dark);
+        }
+      }
+    }
+  }
 }
