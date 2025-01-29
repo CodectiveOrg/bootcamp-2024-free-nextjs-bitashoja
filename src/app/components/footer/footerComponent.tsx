@@ -1,11 +1,10 @@
 import React from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 
-import idkLogo from "@/assets/logo/idk.svg";
-import certificateLego from "@/assets/logo/certificates.svg";
-import enamadLogo from "@/assets/logo/enamad.svg";
+// import idkLogo from "@/assets/logo/idk.svg";
+// import certificateLego from "@/assets/logo/certificates.svg";
+// import enamadLogo from "@/assets/logo/enamad.svg";
 
 import MingcuteYoutubeFill from "@/icons/MingcuteYoutubeFill";
 import MingcuteTelegramFill from "@/icons/MingcuteTelegramFill";
@@ -23,7 +22,7 @@ export default function FooterComponent() {
         </p>
       </div>
       <div className={styles.visuals}>
-        <ul className={styles.certificates}>
+        {/* <ul className={styles.certificates}>
           <li>
             <Link href="#">
               <Image src={idkLogo} alt="idkLogo" />
@@ -39,7 +38,7 @@ export default function FooterComponent() {
               <Image src={enamadLogo} alt="enamadLogo" />
             </Link>
           </li>
-        </ul>
+        </ul> */}
         <ul className={styles.socials}>
           <li>
             <Link href="https://www.youtube.com/codective" target="_blank">

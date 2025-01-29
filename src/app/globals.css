@@ -1,11 +1,23 @@
 :root {
-  --color-gray-20: hsl(0deg 0% 20%);
-  --color-gray-16: hsl(0deg 0% 16%);
-  --color-gray-12: hsl(0deg 0% 12%);
-  --color-gray-10: hsl(0deg 0% 10%);
+  --color-gray-90: hsl(200deg 10% 99%);
+  --color-gray-97: hsl(200deg 10% 97%);
+  --color-gray-93: hsl(200deg 10% 93%);
+  --color-gray-90: hsl(200deg 10% 93%);
+  --color-gray-80: hsl(200deg 10% 80%);
+  --color-gray-70: hsl(200deg 10% 70%);
+  --color-gray-40: hsl(200deg 10% 40%);
+  --color-gray-30: hsl(200deg 10% 30%);
+  --color-gray-20: hsl(200deg 10% 20%);
+  --color-gray-16: hsl(200deg 10% 16%);
+  --color-gray-12: hsl(200deg 10% 12%);
+  --color-gray-10: hsl(200deg 10% 10%);
 
-  --color-default-background: var(--color-gray-10);
-  --color-default-foreground: var(--color-gray-98);
+  --color-surface-300: var(--color-gray-93);
+  --color-surface-400: var(--color-gray-97);
+  --color-surface-700: var(--color-gray-99);
+
+  --color-text-400: var(--color-gray-10);
+  --color-text-700: var(--color-gray-40);
 
   --color-primary: hsl(55, 95%, 42%);
   --color-primary-fade: hsl(120deg 50% 96%);
@@ -13,7 +25,10 @@
   --color-primary-darker: hsl(55, 98%, 31%);
   --color-primary-opposite: var(--color-gray-10);
 
-  --border-radius: 0.875rem;
+  --color-star: hsl(50deg 100% 50%);
+  --color-border: var(--color-gray-80);
+
+  --border-radius: 0.75rem;
 
   --full-width: 75rem;
   --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
@@ -31,7 +46,9 @@
   padding: 0;
 }
 html {
-  color-scheme: dark;
+  color-scheme: light;
+  accent-color: var(--color-primary);
+  caret-color: var(--color-primary);
 }
 
 input,
@@ -53,7 +70,7 @@ ul {
 }
 
 p {
-  color: var(--color-gray-80);
+  color: var(--color-text-700);
 }
 a {
   color: inherit;
@@ -61,8 +78,8 @@ a {
 }
 
 body {
-  background-color: var(--color-default-background);
-  color: var(--color-default-foreground);
+  background-color: var(--color-surface-400);
+  color: var(--color-text-400);
 
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -77,7 +94,7 @@ body {
   }
 }
 .tagline {
-  background-color: var(--color-gray-16);
+  background-color: var(--color-surface-300);
   padding-block: 1rem;
   text-align: center;
 }
