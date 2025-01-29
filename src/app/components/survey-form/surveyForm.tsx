@@ -31,6 +31,8 @@ export default function SurveyForm(): JSX.Element {
     return totalVotes === 0 ? 0 : Math.round((count / totalVotes) * 100);
   };
 
+  console.log(setComments);
+
   // const handleAddComment = () => {
   //   if (newComment.trim() !== "") {
   //     setComments((prev) => [...prev, newComment.trim()]);
