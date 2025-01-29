@@ -4,17 +4,15 @@ import React, { useState } from "react";
 import styles from "./surveyForm.module.css";
 
 interface SurveyData {
-  excellent: number;
-  good: number;
-  average: number;
-  poor: number;
+  encounter: number;
+  explanation: number;
+  skill: number;
 }
 
 const initialVotes: SurveyData = {
-  excellent: 0,
-  good: 0,
-  average: 0,
-  poor: 0,
+  encounter: 0,
+  explanation: 0,
+  skill: 0,
 };
 
 export default function SurveyForm(): JSX.Element {
@@ -44,51 +42,51 @@ export default function SurveyForm(): JSX.Element {
       <h4>نظرسنجی درباره پزشک</h4>
       <div className={styles.options}>
         <div className={styles.option}>
-          <button onClick={() => handleVote("excellent")}>برخورد مناسب</button>
+          <button onClick={() => handleVote("encounter")}>برخورد مناسب</button>
           <span className={styles.percentage}>
             <div
               className={styles.chartBar}
               style={{
-                width: `${getPercentage(votes.excellent)}%`,
+                width: `${getPercentage(votes.encounter)}%`,
                 backgroundColor: "green",
               }}
             >
               <span className={styles.label}>
-                {getPercentage(votes.excellent)}%
+                {getPercentage(votes.encounter)}%
               </span>
             </div>
           </span>
         </div>
         <div className={styles.option}>
-          <button onClick={() => handleVote("good")}>
+          <button onClick={() => handleVote("explanation")}>
             توضیح پزشک در هنگام ویزیت
           </button>
           <span className={styles.percentage}>
             <div
               className={styles.chartBar}
               style={{
-                width: `${getPercentage(votes.good)}%`,
-                backgroundColor: "green",
-              }}
-            >
-              <span className={styles.label}>{getPercentage(votes.good)}%</span>
-            </div>
-          </span>
-        </div>
-        <div className={styles.option}>
-          <button onClick={() => handleVote("average")}>
-            مهارت و تخصص پزشک
-          </button>
-          <span className={styles.percentage}>
-            <div
-              className={styles.chartBar}
-              style={{
-                width: `${getPercentage(votes.average)}%`,
+                width: `${getPercentage(votes.explanation)}%`,
                 backgroundColor: "green",
               }}
             >
               <span className={styles.label}>
-                {getPercentage(votes.average)}%
+                {getPercentage(votes.explanation)}%
+              </span>
+            </div>
+          </span>
+        </div>
+        <div className={styles.option}>
+          <button onClick={() => handleVote("skill")}>مهارت و تخصص پزشک</button>
+          <span className={styles.percentage}>
+            <div
+              className={styles.chartBar}
+              style={{
+                width: `${getPercentage(votes.skill)}%`,
+                backgroundColor: "green",
+              }}
+            >
+              <span className={styles.label}>
+                {getPercentage(votes.skill)}%
               </span>
             </div>
           </span>
