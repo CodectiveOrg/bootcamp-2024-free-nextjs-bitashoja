@@ -4,15 +4,15 @@ import React, { useState } from "react";
 import styles from "./surveyForm.module.css";
 
 interface SurveyData {
-  encounter: number;
-  explanation: number;
-  skill: number;
+  excellent: number;
+  good: number;
+  average: number;
 }
 
 const initialVotes: SurveyData = {
-  encounter: 0,
-  explanation: 0,
-  skill: 0,
+  excellent: 0,
+  good: 0,
+  average: 0,
 };
 
 export default function SurveyForm(): JSX.Element {
@@ -31,8 +31,6 @@ export default function SurveyForm(): JSX.Element {
     return totalVotes === 0 ? 0 : Math.round((count / totalVotes) * 100);
   };
 
-  console.log(setComments);
-
   // const handleAddComment = () => {
   //   if (newComment.trim() !== "") {
   //     setComments((prev) => [...prev, newComment.trim()]);
@@ -44,36 +42,34 @@ export default function SurveyForm(): JSX.Element {
       <h4>نظرسنجی درباره پزشک</h4>
       <div className={styles.options}>
         <div className={styles.option}>
-          <button onClick={() => handleVote("encounter")}>برخورد مناسب</button>
+          <button onClick={() => handleVote("excellent")}>برخورد مناسب</button>
           <span className={styles.percentage}>
             <div
               className={styles.chartBar}
               style={{
-                width: `${getPercentage(votes.encounter)}%`,
+                width: `${getPercentage(votes.excellent)}%`,
                 backgroundColor: "green",
               }}
             >
               <span className={styles.label}>
-                {getPercentage(votes.encounter)}%
+                {getPercentage(votes.excellent)}%
               </span>
             </div>
           </span>
         </div>
         <div className={styles.option}>
-          <button onClick={() => handleVote("explanation")}>
+          <button onClick={() => handleVote("good")}>
             توضیح پزشک در هنگام ویزیت
           </button>
           <span className={styles.percentage}>
             <div
               className={styles.chartBar}
               style={{
-                width: `${getPercentage(votes.explanation)}%`,
+                width: `${getPercentage(votes.good)}%`,
                 backgroundColor: "green",
               }}
             >
-              <span className={styles.label}>
-                {getPercentage(votes.explanation)}%
-              </span>
+              <span className={styles.label}>{getPercentage(votes.good)}%</span>
             </div>
           </span>
         </div>
@@ -83,12 +79,12 @@ export default function SurveyForm(): JSX.Element {
             <div
               className={styles.chartBar}
               style={{
-                width: `${getPercentage(votes.skill)}%`,
+                width: `${getPercentage(votes.average)}%`,
                 backgroundColor: "green",
               }}
             >
               <span className={styles.label}>
-                {getPercentage(votes.skill)}%
+                {getPercentage(votes.average)}%
               </span>
             </div>
           </span>
