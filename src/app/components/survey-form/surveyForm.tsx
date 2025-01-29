@@ -17,7 +17,7 @@ const initialVotes: SurveyData = {
 
 export default function SurveyForm(): JSX.Element {
   const [votes, setVotes] = useState<SurveyData>(initialVotes);
-  const [comments, setComments] = useState<string[]>([]);
+  const [comments] = useState<string[]>([]);
   const [newComment, setNewComment] = useState<string>("");
   const [showComments, setShowComments] = useState<boolean>(false);
 
@@ -30,12 +30,6 @@ export default function SurveyForm(): JSX.Element {
   const getPercentage = (count: number) => {
     return totalVotes === 0 ? 0 : Math.round((count / totalVotes) * 100);
   };
-
-  // const handleAddComment = () => {
-  //   if (newComment.trim() !== "") {
-  //     setComments((prev) => [...prev, newComment.trim()]);
-  //     setNewComment("");
-  //   }
 
   return (
     <div className={styles.surveyContainer}>
@@ -74,7 +68,9 @@ export default function SurveyForm(): JSX.Element {
           </span>
         </div>
         <div className={styles.option}>
-          <button onClick={() => handleVote("skill")}>مهارت و تخصص پزشک</button>
+          <button onClick={() => handleVote("average")}>
+            مهارت و تخصص پزشک
+          </button>
           <span className={styles.percentage}>
             <div
               className={styles.chartBar}
@@ -126,9 +122,6 @@ export default function SurveyForm(): JSX.Element {
             )}
           </div>
         )}
-        {/* <button className={styles.addCommentButton} onClick={handleAddComment}>
-          اضافه کردن نظر
-        </button> */}
       </div>
     </div>
   );
