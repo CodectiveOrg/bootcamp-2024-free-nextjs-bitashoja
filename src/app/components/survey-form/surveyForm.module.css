@@ -1,0 +1,84 @@
+.surveyContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h4 {
+    margin: 15px 0;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .option {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+
+      .percentage {
+        margin-left: 10px;
+        font-weight: bold;
+
+        .chartBar {
+          height: 10px;
+          margin-bottom: 5px;
+          border-radius: 5px;
+          color: white;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .label {
+            color: black; /* متن درصد */
+          }
+        }
+      }
+    }
+  }
+  .showAllButton {
+    width: 50%;
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .showAllButton:hover {
+    background-color: var(--color-primary-lighter);
+  }
+  .commentInput {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .addCommentButton {
+    width: 50%;
+    background-color: var(--color-primary);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .addCommentButton:hover {
+    background-color: var(--color-primary-lighter);
+  }
+}
