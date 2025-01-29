@@ -1,4 +1,4 @@
-import { CssProperties, React } from "react";
+import { CSSProperties } from "react";
 import styles from "./loading.module.css";
 
 export default function Loading() {
@@ -12,13 +12,13 @@ export default function Loading() {
     <div className={styles.loading}>
       <div
         className={styles.particles}
-        style={{ "--duration": duration + "s" } as CssProperties}
+        style={{ "--duration": duration + "s" } as CSSProperties}
       >
         {delays.map((delay, index) => (
           <i
             key={index}
             className={styles.particle}
-            style={{ "--delay": delay + "s" } as CssProperties}
+            style={{ "--delay": delay + "s" } as CSSProperties}
           ></i>
         ))}
       </div>
