@@ -3,15 +3,15 @@
   padding: 15px;
 
   .delete {
-    background-color: #ff4d4f; /* رنگ پس‌زمینه دکمه */
-    color: white; /* رنگ متن دکمه */
+    background-color: #ff4d4f;
+    color: white;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
 
     &:hover {
-      background-color: #ff7875; /* رنگ تغییر یافته در هنگام هاور */
+      background-color: #ff7875;
     }
   }
 
