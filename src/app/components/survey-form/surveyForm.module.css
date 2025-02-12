@@ -1,84 +1,74 @@
 .surveyContainer {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.2rem;
 
-  h4 {
-    margin: 15px 0;
+  .commentInput {
+    width: 100%;
+    height: 5rem;
   }
 
-  .options {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  .chartBar {
+    height: 10px;
+    background-color: gray;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
 
-    .option {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+  .buttonComments {
+    button {
+      background-color: white;
+      border: 2px solid var(--color-primary);
+      color: black;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      height: 2.4rem;
+      border-radius: 5px;
       margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
-      .percentage {
-        margin-left: 10px;
-        font-weight: bold;
+      &:hover {
+        background-color: var(--color-primary-lighter);
+      }
+    }
+  }
 
-        .chartBar {
-          height: 10px;
-          margin-bottom: 5px;
-          border-radius: 5px;
-          color: white;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-          .label {
-            color: black; /* متن درصد */
+    .modalContent {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      .ratingCategory {
+        margin: 10px 0;
+
+        .stars {
+          font-size: 24px;
+          margin: 10px 0;
+
+          .star {
+            cursor: pointer;
+            color: gray;
+          }
+
+          .selectedStar {
+            cursor: pointer;
+            color: gold;
           }
         }
       }
     }
-  }
-  .showAllButton {
-    width: 50%;
-
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .showAllButton:hover {
-    background-color: var(--color-primary-lighter);
-  }
-  .commentInput {
-    width: 100%;
-    height: 80px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .addCommentButton {
-    width: 50%;
-    background-color: var(--color-primary);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .addCommentButton:hover {
-    background-color: var(--color-primary-lighter);
   }
 }

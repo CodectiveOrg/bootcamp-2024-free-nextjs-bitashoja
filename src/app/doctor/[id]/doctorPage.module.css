@@ -36,25 +36,25 @@
 
     .details {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 25px;
-      margin-top: 20px;
+      padding: 1.4rem;
+      margin-top: 1.2rem;
     }
     .comments {
       h4 {
-        margin-top: 20px;
+        margin-top: 1.2rem;
       }
     }
   }
 
   .right {
-    padding: 20px;
+    padding: 1.2rem;
     flex: 1;
-    margin-left: 20px;
+    margin-left: 1.2rem;
     display: flex;
     flex-direction: column;
     .visits {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 20px;
+      padding: 1.8rem;
     }
     .visit {
       display: flex;
@@ -70,7 +70,7 @@
         li {
           font-weight: bold;
           position: relative;
-          padding-left: 25px;
+          padding-left: 1.6rem;
           cursor: pointer;
         }
       }
@@ -86,19 +86,19 @@
       }
     }
     p {
-      font-size: 14px;
-      padding: 15px 0;
+      font-size: 1rem;
+      padding: 1rem 0;
     }
 
     button {
       background-color: var(--color-primary);
-      color: black;
+      color: hsl(200deg 10% 10%);
       border: none;
       width: 100%;
       max-width: 100%;
       min-width: 0;
-      height: 39px;
-      border-radius: 5px;
+      height: 2.43rem;
+      border-radius: 0.5rem;
       cursor: pointer;
       transition: background-color 0.3s;
 
@@ -112,7 +112,7 @@
       padding: 25px;
       button {
         background-color: var(--color-primary);
-        color: black;
+        color: hsl(200deg 10% 10%);
         border: none;
         width: 100%;
         max-width: 100%;

@@ -41,6 +41,7 @@ export default function CardComponent({
 
   return (
     <div className={styles.card}>
+      <button className={styles.delete}>حذف</button>
       <div className={styles.title}>جنسیت پزشک</div>
       <ul>
         {genders.map((gender) => (
