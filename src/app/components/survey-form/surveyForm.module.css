@@ -1,0 +1,74 @@
+.surveyContainer {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.2rem;
+
+  .commentInput {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .chartBar {
+    height: 10px;
+    background-color: gray;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  .buttonComments {
+    button {
+      background-color: white;
+      border: 2px solid var(--color-primary);
+      color: black;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      height: 2.4rem;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: var(--color-primary-lighter);
+      }
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modalContent {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      .ratingCategory {
+        margin: 10px 0;
+
+        .stars {
+          font-size: 24px;
+          margin: 10px 0;
+
+          .star {
+            cursor: pointer;
+            color: gray;
+          }
+
+          .selectedStar {
+            cursor: pointer;
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+}

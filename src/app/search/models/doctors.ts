@@ -2,7 +2,7 @@ import { DoctorModel } from "@/app/search/models/doctor.model";
 
 export const doctors: DoctorModel[] = [
   {
-    id: "97420f0d-b576-4f65-9ffc-a81b4b1b4e77",
+    id: "97420f0d",
     name: "پوراندخت جعفري",
     image:
       "/getImage/p24/search-men/155442212a4f2d04e5514bf6f61fd686.jpg?size=150",
@@ -18,7 +18,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
   },
   {
-    id: "e6719f23-e846-4a95-88f9-c013c5d9cb4f",
+    id: "e6719f23",
     name: "مجتبی قدسی",
     image:
       "/getImage/p24/search-men/75fb4a009a8ab4af3a5c4f819f1846c7.jpg?size=150",
@@ -34,7 +34,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "4a7403d4-e0a2-406c-8dea-3e557bae54d2",
+    id: "4a7403d4",
     name: "امیرحسین پورداود",
     image:
       "/getImage/p24/search-men/98c386aa9c77f7792a4b777137b9fc55.jpg?size=150",
@@ -49,7 +49,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "06d3a495-160d-4722-815e-286ff5d82ed2",
+    id: "06d3a495",
     name: "اعظم قهساره اردستانی",
     image: "/getImage/p24/search-women/noimage.png?size=150",
     isVerified: true,
@@ -64,7 +64,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
   },
   {
-    id: "7f39ff5b-4c81-4c59-80fa-7872b675bb18",
+    id: "7f39ff5b",
     name: "رضا پورعلی",
     image:
       "/getImage/p24/search-men/d7ec05f5b918e11df6a65e65616140a6.jpg?size=150",
@@ -98,7 +98,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
   },
   {
-    id: "ba7333ef-9e18-11ea-9877-005056b09c11",
+    id: "ba7333ef",
     name: "محمدرضا ادراکی",
     image:
       "/getImage/p24/search-men/01fffb3a5571c71c0d23baa1703af593.jpg?size=150",
@@ -113,7 +113,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "a8a27637-9e67-11ea-9877-005056b09c11",
+    id: "a8a27637",
     name: "محسن رضائی مقدم",
     image:
       "/getImage/p24/search-men/c5fbfe5e84dff93b4ea9e1d899ddf22a.jpeg?size=150",
@@ -129,7 +129,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "286439d9-617a-4d5c-a77a-e1ac0c088780",
+    id: "286439d9",
     name: "پیمان شاه حسینی",
     image:
       "/getImage/p24/search-men/12ff70d98e027620cce5d82906076724.jpg?size=150",
@@ -144,7 +144,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "601e14cb-c7f7-4668-b883-3c61ebd11f52",
+    id: "601e14cb",
     name: "رضا افتخار",
     image:
       "/getImage/p24/search-men/a6676efea5cc45be71de3391f126696d.jpg?size=150",
@@ -176,7 +176,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "85882eb5-1d70-4453-9f67-2a232527590c",
+    id: "85882eb5",
     name: "پژمان روحانی",
     image:
       "/getImage/p24/search-men/5b4488a3f56e3fe53e2f8b8cc2800801.jpg?size=150",
@@ -192,7 +192,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "6b59b263-73fe-4316-ae81-4fe50968a723",
+    id: "6b59b263",
     name: "عباس ریحانی",
     image:
       "/getImage/p24/search-men/c8a56ac6d693ee7de3ee638f3cf96642.jpeg?size=150",
@@ -207,7 +207,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "1eb139dc-42d2-4110-8a09-f04a2561372c",
+    id: "1eb139dc",
     name: "نرگس رخش بهار",
     image:
       "/getImage/p24/search-men/5f2b15855a7d9b9bb648dabd501b4c67.jpg?size=150",
@@ -239,7 +239,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "4917678e-5e19-4322-b9e4-eb73e8ec622c",
+    id: "4917678e",
     name: "نوید دانائی",
     image:
       "/getImage/p24/search-men/ae791c7376eb36c7e10ab35a47f4d163.jpeg?size=150",
@@ -303,7 +303,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
   },
   {
-    id: "c1d1fa23-ec60-11ec-b214-005056ad7555",
+    id: "c1d1fa23",
     name: "جلال امینی",
     image: "/getImage/p24/search-men/noimage.png?size=150",
     isVerified: true,

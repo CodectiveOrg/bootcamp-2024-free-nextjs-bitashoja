@@ -6,6 +6,7 @@ import styles from "./card.module.css";
 interface Props {
   onGenderSelect: (gender: string) => void;
   onSpecialtySelect: (specialty: string) => void;
+  children: React.ReactNode;
 }
 
 export default function CardComponent({
@@ -41,6 +42,7 @@ export default function CardComponent({
 
   return (
     <div className={styles.card}>
+      <button className={styles.delete}>حذف</button>
       <div className={styles.title}>جنسیت پزشک</div>
       <ul>
         {genders.map((gender) => (

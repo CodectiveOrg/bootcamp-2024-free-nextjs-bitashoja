@@ -6,7 +6,7 @@ import {
   useFilter,
 } from "@/app/components/filter/FilterContext";
 import CardComponent from "@/app/components/card/cardComponent";
-import DoctorList from "../components/docters-list/doctersList";
+import DoctorList from "../components/doctors-list/doctorsList";
 import styles from "./page.module.css";
 
 export default function SearchPage() {
