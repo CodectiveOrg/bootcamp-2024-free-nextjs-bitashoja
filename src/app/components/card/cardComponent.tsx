@@ -6,6 +6,7 @@ import styles from "./card.module.css";
 interface Props {
   onGenderSelect: (gender: string) => void;
   onSpecialtySelect: (specialty: string) => void;
+  children: React.ReactNode;
 }
 
 export default function CardComponent({
