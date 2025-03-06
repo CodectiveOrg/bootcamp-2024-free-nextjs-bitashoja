@@ -62,9 +62,6 @@ export default function SignUpFormComponent(): ReactElement {
               <Link href="/auth/sign-in">وارد شوید</Link>.
             </div>
           </div>
-          {/* <div className={styles.visuals}>
-            <Image src={signUpImage} alt="" />
-          </div> */}
         </div>
       </CardComponent>
     </div>

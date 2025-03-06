@@ -1,16 +1,12 @@
 "use client";
 
 import { FormEvent, ReactElement } from "react";
-
-import Image from "next/image";
 import Link from "next/link";
 
-import signInImage from "@/assets/images/sign-in.webp";
-
-import { ButtonComponent } from "@/components/button/button.component";
-import CardComponent from "@/components/card/card.component";
-import NormalInputComponent from "@/components/normal-input/normal-input.component";
-import PasswordInputComponent from "@/components/password-input/password-input.component";
+import { ButtonComponent } from "@/app/components/button/button.component";
+import CardComponent from "@/app/components/card/card.module.css";
+import NormalInputComponent from "@/app/components/normal-input/normal-input.component";
+import PasswordInputComponent from "@/app/components/password-input/password-input.comonent";
 
 import MingcuteUser3Line from "@/icons/MingcuteUser3Line";
 
@@ -25,7 +21,7 @@ export default function SignInFormComponent(): ReactElement {
 
   return (
     <div className={styles["auth-form"]}>
-      <CardComponent>
+      <CardComponent onGenderSelect={() => {}} onSpecialtySelect={() => {}}>
         <div className={styles["card-content"]}>
           <div className={styles.writings}>
             <h1>ورود!</h1>
@@ -48,9 +44,6 @@ export default function SignInFormComponent(): ReactElement {
               {` `}
               <Link href="/auth/sign-up">ثبت‌نام کنید</Link>.
             </div>
-          </div>
-          <div className={styles.visuals}>
-            <Image src={signInImage} alt="" />
           </div>
         </div>
       </CardComponent>
